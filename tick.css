@@ -1,0 +1,539 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+#datePicker{
+    background-color: rgb(255, 255, 255);
+    height: 40%;
+    padding: 10px 25px;
+    border: 1px solid black;
+    border-radius: 15px;
+    position: relative;
+    top: 7%;
+    left: 15%;
+    text-transform: uppercase;
+
+}
+.behindbag{
+    width: 80%;
+    height: 60%;
+    background-color: rgba(226, 226, 226, 0.966);
+    border-radius: 20px;
+    position: relative;
+    left: 10%;
+    padding: 20px;
+    transition: 0.5s;
+}
+.behindbag:hover{
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
+}
+.main{
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    left: 7%;
+    top: 15%;
+}
+.under{
+    font-size: 14px;
+    font-weight: 400;
+    opacity: 50%;
+    position: relative;
+    left: 7%;
+    top: 15%;
+}
+.button{
+    position: absolute;
+    top: 33%;
+    right: 10%;
+    width: 14%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.button span{
+    width: 100%;
+    padding: 14px;
+    position: relative;
+    top: 7%;
+    left: 4%;
+    font-weight: 600;
+}
+.button span.num{
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+.buttonsk{
+    position: absolute;
+    top: 45%;
+    right: 10%;
+    width: 14%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.buttonsk span{
+    width: 100%;
+    padding: 14px;
+    position: relative;
+    top: 7%;
+    left: 4%;
+    font-weight: 600;
+}
+.buttonsk span.num{
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+.buttonfa{
+    position: absolute;
+    top: 58%;
+    right: 10%;
+    width: 14%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.buttonfa span{
+    width: 100%;
+    padding: 14px;
+    position: relative;
+    top: 7%;
+    left: 4%;
+    font-weight: 600;
+}
+.buttonsfa span.num{
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+.buttonfc{
+    position: absolute;
+    top: 71%;
+    right: 10%;
+    width: 14%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.buttonfc span{
+    width: 100%;
+    padding: 14px;
+    position: relative;
+    top: 7%;
+    left: 4%;
+    font-weight: 600;
+}
+.buttonsfc span.num{
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+.buttoni{
+    position: absolute;
+    top: 84%;
+    right: 10%;
+    width: 14%;
+    height: 10%;
+    background-color: #fff;
+    border-radius: 8px;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    
+}
+.buttoni span{
+    width: 100%;
+    padding: 14px;
+    position: relative;
+    top: 7%;
+    left: 4%;
+    font-weight: 600;
+}
+.buttonsi span.num{
+    border-right: 2px solid rgba(0, 0, 0, 0.2);
+    border-left: 2px solid rgba(0, 0, 0, 0.2);
+}
+.prosbut{
+    position: absolute;
+    top: 120%;
+    right: -5%;
+    font-size: 20px;
+    padding: 5px 30px;
+    background-color: rgb(43, 105, 51);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.75s;
+}
+.prosbut:hover{
+    background-color:white;
+    border: 1px solid black;
+    color : black;
+}
+.secondPage{
+    height: 100vh;
+    position: relative;
+    top: 0%;
+    z-index: 2;
+    opacity: 100%;
+}
+.sbehindbag{
+    width: 80%;
+    height: 65%;
+    background-color: rgba(226, 226, 226, 0.555);
+    border-radius: 20px;
+    position: relative;
+    left: 10%;
+    padding: 20px;
+    transition: 0.5s;
+    opacity: 100%;
+}
+.time h1{
+    font-size: 18px;
+    font-weight: bold;
+    position: absolute;
+    top: 7%;
+    left: 15%;
+    opacity: 0%;
+    animation: pageshower 3s ease-in-out 0s 1 normal forwards;
+}
+.timepicker{
+    position: absolute;
+    top: 5%;
+    left: 55%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 10px;
+    transition: 0.5s;
+    opacity: 0%;
+    animation: pageshower 3s ease-in-out 0s 1 normal forwards;
+}
+.table{
+    position: absolute;
+    top: 30%;
+    left: 5%; 
+    opacity: 0%;
+    animation: pageshower 3s ease-in-out 0s 1 normal forwards;
+}
+.table tr td{
+    padding: 3px 40px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sprosbut{
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    font-size: 20px;
+    padding: 5px 30px;
+    background-color: rgb(43, 105, 51);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.75s;
+}
+.sprosbut:hover{
+    background-color:white;
+    border: 1px solid black;
+    color : black;
+}
+.pre{
+    position: absolute;
+    left: 48%;
+    top: 40%;
+    transform: scale(1.5);
+}
+@keyframes loader {
+  0% {transform:rotate(-45deg);opacity: 100%;}
+  50%{transform:rotate(-135deg);opacity: 100%;}
+  100%{transform:rotate(-225deg);opacity: 0%;}}
+@keyframes span-1 {
+  0% {transform:translate(0);}
+  50%{transform:translate(-50px, 0);border-color:#EE4D68;opacity: 100%;}
+  100%{transform:translate(0);opacity: 0%;}}
+@keyframes span-2 {
+  0%{transform:translate(0);}
+  50%{transform:translate(50px, 0);border-color:#875678;opacity: 100%;}
+  100%{transform:translate(0);opacity: 0%;}}
+@keyframes span-3 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, -50px);border-color:#FF9900;opacity: 100%;}
+  100%{transform:translate(0);opacity: 0%;}}
+@keyframes span-4 {
+  0%{transform:translate(0);}
+  50%{transform:translate(0, 50px);border-color:#00E4F6;opacity: 100%;}
+  100%{transform:translate(0);opacity: 0%;}}
+.loader {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  animation: loader 2s forwards ease-in-out;
+}
+.loader span {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  border: 4px solid #0B1B48;
+}
+.loader span:nth-child(1) {
+  animation: span-1 2s ease-in-out forwards;
+}
+.loader span:nth-child(2) {
+  animation: span-2 2s ease-in-out forwards;
+}
+.loader span:nth-child(3) {
+  animation: span-3 2s ease-in-out forwards;
+}
+.loader span:nth-child(4) {
+  animation: span-4 2s ease-in-out forwards;
+}
+@keyframes pageshower {
+    0%{
+        opacity: 0%;
+    }
+    70%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+.sumerPage{
+    height: 100vh;
+    position: relative;
+    top: 0%;
+    z-index: 2;
+    opacity: 100%;
+}
+.summertablecs{
+    position: relative;
+    left: 25%;
+    animation: pageshower 3s ease-in-out 0s 1 normal forwards;
+}
+.summertablecs tr td{
+    padding: 3px 40px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sumtable h1{
+    position: relative;
+    left: 10%;
+    font-size: 50px;
+    font-weight: 900;
+    text-transform: uppercase;
+    cursor: default;
+    animation: pageshower 3s ease-in-out 0s 1 normal forwards;
+}
+.summertablecspage{
+    position: relative;
+    left: 56%;
+    
+}
+.summertablecspage tr td{
+    padding: 2px 30px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.sumtablepageqwe{
+    position: relative;
+    top: 34%;
+    animation: pageshower 3s ease-in-out 0s 1 normal forwards;
+}
+.tbehindbag{
+    width: 80%;
+    height: 65%;
+    background-color: rgba(226, 226, 226, 0.555);
+    border-radius: 20px;
+    position: relative;
+    left: 10%;
+    padding: 20px;
+    transition: 0.5s;
+    opacity: 100%;
+}
+.mainpageuser{
+    width: 100%;
+    height: 83%;
+    position: absolute;
+    top: 15%;
+}
+.name{
+    position: relative;
+    left: 15%;
+    top: 5%;
+}
+.name h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.name h2{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    opacity: 20%;
+}
+.name input{
+    width: 25%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.number{
+    position: absolute;
+    left: 55%;
+    top: 10%;
+}
+.number h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.number h2{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    opacity: 20%;
+}
+
+.email{
+    position: relative;
+    top: 10%;
+    left: 15%;
+}
+.email h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.email h2{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    opacity: 20%;
+}
+.email input{
+    width: 25%;
+    height: 30px;
+    border-radius: 10px;
+    position: relative;
+    left: -0%;
+    border: none;
+    outline: none;
+    margin-top: 5px;
+}
+.email1{
+    position: absolute;
+    left: 55%;
+    top: 37%;
+}
+.email1 h1{
+    font-size: 20px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.email1 h2{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    opacity: 20%;
+}
+.email1 input{
+    width: 110%;
+    height: 30px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    margin-top: 5px;
+}
+.final{
+    position: absolute;
+    top: 90%;
+    right: 5%;
+    font-size: 20px;
+    padding: 5px 30px;
+    background-color: rgb(43, 105, 51);
+    border-radius: 8px;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+    overflow: hidden;
+    cursor: pointer;
+    transition: 0.75s;
+}
+.final:hover{
+    background-color:white;
+    border: 1px solid black;
+    color : black;
+}
+.finalblock{
+    width: 80%;
+    height: 65%;
+    background-color: rgba(226, 226, 226, 0.555);
+    border-radius: 20px;
+    position: relative;
+    left: 10%;
+    padding: 20px;
+    transition: 0.5s;
+    opacity: 100%;
+    text-align: center;
+}
+.finalblock h1{
+    font-size: 30px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+}
+.finalblock h2{
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    opacity: 20%;
+}
+.finaltable{
+    border: 2px solid black;
+    position: relative;
+    left: 23%;
+    margin-top: 5%;    
+}
+.finaltable tr td{
+    padding: 2px 50px;
+    border: 2px solid black;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+}
+.mainfinalpage{
+    opacity: 0%;
+    animation: pageshower 3s ease-in-out 0s 1 normal forwards;
+}

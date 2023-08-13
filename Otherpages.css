@@ -1,0 +1,1013 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+/* -------------------------------Nav--------------------------- */
+.navmain{
+    width: 100%;
+    height: 8%;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    z-index: 1001;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    animation: NAV 3s ease-in-out 2s 1 normal forwards;
+    opacity: 0;
+}
+ul{
+    position: absolute;
+    top: 15%;
+    left: 20%;
+}
+ul li{
+    display: inline-block;
+    padding: 14px;
+    background-color: transparent;
+    margin: 0px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+
+}
+/* change font color according to background */
+ul li a{
+    text-decoration: none;
+    color: rgb(139, 139, 139);
+    font-weight: 900;
+}
+/* change font color according to background */
+ul li:hover{
+    background-color: rgb(4, 0, 27);
+    transform: scale(1.2)
+}
+.th li:hover{
+    background-color: rgb(255, 255, 255);
+    transform: scale(1.2)  
+}
+.catt li:hover{
+    background-color: rgb(0, 0, 0);
+    transform: scale(1.2)  
+}
+.catt li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+/* ------------------------------Form-------------------------- */
+form{
+    width: 800px;
+    position: absolute;
+    left: 20%;
+    top: 10%;
+    padding: 10px;
+    border: 1px solid white;
+    transition: 0.5s;
+}
+h1{
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2em;
+    cursor: default;
+}
+label{
+    font-size: 20px;
+}
+.box1{
+    width: 100%;
+    padding: 10px;
+    border:none;
+    box-sizing: border-box;
+    margin: 10px 0 14px 0;
+    background-color: #30475e;
+}
+.bod{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-image: url("Assests/pexels-asian-wanderlust-5656452.jpg");
+}
+.divvv{
+    display: inline-block;
+}
+.box2{
+    padding: 10px;
+    border:none;
+    border-radius: 15px;
+    margin: 20px 0 30px 0;
+    background-color: #30475e;
+}
+.btt{
+    width: 49%;
+    padding: 10px;
+    border: none;
+    border-radius: 15px;
+    background-color: #30475e;
+    font-size: 19px;
+    color: #ffff;
+    transition: 0.35s;
+}
+input{
+    font-size: 20px;
+}
+label{
+    color: #ffff;
+}
+.btt:hover{
+    transform: scale(1.025);
+    background-color: #ffff;
+    color: #30475e;
+}
+form:hover{
+    box-shadow: 0 4px 8px 0 #ffff, 0 4px 8px 0 #ffff;
+}
+@media only screen and (max-width:425px){
+    form{
+        position: absolute;
+        left: -47%;
+        top: 5%;
+        transform: scale(0.5);
+    }
+}
+/* ---------------------------------Hikkaduwa---------------------------- */
+.imgmain{ 
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-image: url("Assests/ezgif-4-d35d960b19.jpg");
+    z-index: -3;
+}
+.main-texthik h2{
+    font-family: 'Anton', sans-serif;
+    font-size: 140px;
+    position: absolute;
+    bottom: 23%;
+    left: 3%;
+    z-index: 150;
+}
+.main-texthik h2:nth-child(1){
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+.main-texthik h2:nth-child(2){
+    color: rgb(255, 255, 255);
+    animation: animate 4s ease-in-out infinite;
+}
+.main-texthik h1{
+    font-family: 'Anton', sans-serif;
+    font-size: 140px;
+    position: absolute;
+    bottom: 1%;
+    left: 3%;
+    z-index: 150;
+}
+.main-texthik h1:nth-child(3){
+    color: transparent;
+    -webkit-text-stroke: 2px white;
+}
+.main-texthik h1:nth-child(4){
+    color: rgb(255, 255, 255);
+    animation: animate 4s ease-in-out infinite;
+}
+@keyframes animate{
+    0%,100%{
+        clip-path: polygon(0 49%, 15% 45%, 31% 50%, 45% 58%, 64% 57%, 85% 47%, 100% 52%, 100% 100%, 0 100%);
+    }
+    50%{
+        clip-path: polygon(0 57%, 18% 64%, 36% 65%, 52% 61%, 66% 49%, 85% 40%, 100% 43%, 100% 100%, 0 100%);
+}
+}
+#secondsechik{
+    width: 100%;
+    height: 100vh;
+
+}
+.secondimghik{
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("Assests/pexels-malinda-bandara-16508231.jpg");
+    z-index: -3;
+}
+.mainpara{
+    width: 50%;
+    position: relative;
+    bottom: 80%;
+    left: 2%;
+    background-color: #fff;
+    padding: 11px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 125%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align: center;
+    border-radius: 20px 0 20px 0;
+    transition: 0.2s;
+}
+.mainpara h1{
+    color:  black;
+    font-weight: 900;
+}
+.mainpara p{
+    position: relative;
+    top: 10px;
+}
+.mainpara:hover{
+    border-radius: 0px 20px 0px 20px;
+}
+.secmainpara{
+    width: 50%;
+    position: relative;
+    bottom: 75%;
+    left: 2%;
+    background-color: #fff;
+    padding: 12px;
+    font-weight: 600;
+    line-height: 125%;
+    font-family: 'Fira Sans Condensed', sans-serif;
+    text-align: center;
+    border-radius: 0px 20px 0px 20px;
+    transition: 0.2s;
+}
+.secmainpara p{
+    font-size: 16px;
+}
+.secmainpara:hover{
+    border-radius: 20px 0px 20px 0px;
+}
+.maps{
+    position: relative;
+    right: 3%;
+    bottom: 130%;
+    font-size: 8px;
+}
+.mapimg{
+    width: 500px;
+    height: 500px;
+    position: relative;
+    bottom: 150%;
+    left: 56%;
+    font-size: 8px;
+}
+iframe{
+    width: 100%;
+    height: 100%;
+}
+.mainpre{ 
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: absolute;
+    z-index: 1000;
+}
+.slidleft{
+    width: 50%;
+    height: 100vh;
+    background-color: #020f1a;
+    animation: left 1s ease-in-out 1.5s 1 normal forwards;
+}
+.slidRight{
+    width: 50%;
+    height: 100vh;
+    background-color: #020f1a;
+    position: absolute;
+    right: 0;
+    top: 0%;
+    animation: right 1s ease-in-out 1.5s 1 normal forwards;
+}
+.cenbox{ 
+    width: 70px;
+    height: 70px;
+    background-color: aqua;
+    position: absolute;
+    top: 47%;
+    left: 47.3%;
+    z-index: 2;
+    transition: 0.3s;
+    animation: rote 2s ease-in-out 1s 1 normal forwards;
+}
+@media only screen and (max-width:600px){
+    body{
+        height: 100%;
+    }
+    .mainpre{
+        display: none;
+    }
+    .main-texthik h1{
+        font-size: 6em;
+    }
+    .main-texthik h2{
+        font-size: 5.5em;
+    }
+    .mainpara{
+        height: auto;
+        width: 80%;
+        top: -145%;
+        left: 6%;
+        font-size: 13px;
+    }
+    .secmainpara{
+        height: auto;
+        width: 80%;
+        top: -140%;
+        left: 6%;
+        font-size: 13px;
+    }
+    .secondimghik{
+        height: 150%;
+    }
+    .mapimg{
+        width: 90%;
+        height: 90%;
+        background-color: #00ebb0;
+        position: absolute;
+        top: 180%;
+        left: -0.5%;
+        transform: scale(0.5);
+    }
+    .hikfootmain{
+        position: absolute;
+        top: 255%;
+    }
+    .col-2 h3{
+        position: absolute;
+        top: 55%;
+        left: 10%;
+    }
+    .col-2 form{
+        position: absolute;
+        top: 10%;
+        left: -25%;
+        transform: scale(0.5);
+    }
+    .col-1 h3{
+        position: absolute;
+        top: 5%;
+        left: 140%;
+        width: 190%;
+        font-size: 16px;
+    }
+    .col-1 a{
+        line-height: 5px;
+        position: relative;
+        left: 190%;
+    }
+}
+
+
+
+
+
+
+/* -----------------------------Threats--------------------------------------- */
+/* -----------------main------------------------ */
+.threatssmoke{
+    width: 100%;
+    height: 100vh;
+    background: #000;
+}
+video{ 
+    width: 100%;
+    height: 99vh;
+}
+.smokeh1{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    color: #ddd;
+    font-size: 5em;
+    font-family: sans-serif;
+    letter-spacing: 0.2em;
+    
+} 
+.smokeh1 span{
+    opacity: 0;
+    display: inline-block;
+    animation: smokeeff 1s linear forwards;
+}
+.smokeh1 span:nth-child(1){
+    animation-delay: 1s;
+}
+.smokeh1 span:nth-child(2){
+    animation-delay: 2s;
+}
+.smokeh1 span:nth-child(3){
+    animation-delay: 2.5s;
+}
+.smokeh1 span:nth-child(4){
+    animation-delay: 3s;
+}
+.smokeh1 span:nth-child(5){
+    animation-delay: 3.5s;
+}
+.smokeh1 span:nth-child(6){
+    animation-delay: 4s;
+}
+.smokeh1 span:nth-child(7){
+    animation-delay: 4.5s;
+}
+/* ---------------sections----------------- */
+.secondsecthreats{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+
+}
+.desboxthreats{
+    height: 90%;
+    width: 90%;
+    background-color: #ddd;
+    position: relative;
+    left: 5%;
+    top: 5%;
+    border-radius: 40px 0 40px 0;
+
+}
+.imgbocthreats{
+    height: 100%;
+    width: 40%;
+    background-image: url("Assests/kate-charles-leatherback-edit.jpg");
+    border-radius: 40px 0;
+    background-size: cover;
+}
+.dessecthreats{
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    top: 5%;
+    right: 5%;
+}
+.dessecthreats h1{
+    font-size: 40px;
+    color: #000;
+    position: absolute;
+}
+.dessecthreats p{
+    position: absolute;
+    top: 25%;
+    font-size: 20px;
+    line-height: 140%;
+}
+.solusecthreats{
+    width: 50%;
+    height: 40%;
+    position: absolute;
+    bottom: 3%;
+    right: 5%;
+    opacity: 0;
+    transition: 0.5s ease-in-out;
+}
+.solusecthreats p{
+    font-size: 20px;
+    line-height: 120%;
+}
+.hovthreats{
+    position: absolute;
+    top: 48%;
+    left: 45%;
+    border: 1px solid black;
+    padding: 2.5px;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+    font-size: 14px;
+}
+.hovthreats:hover{
+    border-radius: 10px;
+}
+.hovthreats:hover ~ .solusecthreats{
+    opacity: 1;
+} 
+.thirdsecthreats{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 200%;
+}
+.imgboxthreats{
+    height: 100%;
+    width: 40%;
+    background-image: url("Assests/Dc_w_+people_highrises_\(c\)_Ted_Swoboda.jpeg");
+    border-radius: 40px 0;
+    background-size: cover;
+    background-position: center;
+}
+.fourthsecthreats{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 300%;
+}
+.imgboxfthreats{
+    height: 100%;
+    width: 40%;
+    background-image: url("Assests/Caribbean_04_2008-231-Edit.jpg");
+    border-radius: 40px 0;
+    background-size: cover;
+    background-position: center;
+}
+.fifththsecthreats{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    top: 400%;
+}
+.imgboxfifthreats{
+    height: 100%;
+    width: 40%;
+    background-image: url("Assests/IYORBank_CoralBleaching_TheOceanAgency_30.jpg");
+    border-radius: 40px 0;
+    background-size: cover;
+    background-position: center;
+}
+.threatfoot{
+    width: 100%;
+    position: absolute;
+    top: 500%;
+}
+
+/* --------------------------Catergories--------------------------------- */
+.vidseccat{
+    width: 100%;
+    height: 100vh;
+    background-color: #020f1a;
+    background-image: url("Assests/pexels-pok-rie-351201.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    filter: blur(3px);
+}
+.vidcat{
+    width: 40%;
+    height: auto;
+    position: absolute;
+    left: 30%;
+    top: 25%;
+    border-radius: 20px;
+}
+.catercont{
+    position: relative;
+    display: flex;
+    background: #000;
+    text-align: center;
+
+}
+.catercont span{
+    position: sticky;
+    top: 0;
+    width: 10%;
+    height: 100vh;
+    background: rgb(0, 0, 0);
+    margin-top: calc(100vh * var(--i));
+}
+.catercont span h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 3em;
+}
+.tetxt a{
+    position: absolute;
+    bottom: 7%;
+    left: 45%;
+    border: 1px solid white;
+    padding: 10px;
+    border-radius: 14px;
+    color: white;
+    font-weight: 900;
+    cursor: default;    
+    transition: 0.5s ease-in-out;
+    text-decoration: none;
+    transition: 0.5s;
+    font-size: 10px;
+}
+.tetxt a:hover{
+    color: black;
+    background-color: #fff;
+}
+#sectiono{
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    z-index: 100;
+    top: 100%;
+    overflow: hidden;
+    background-color: #ffff;
+}
+#sectiono h1{ 
+    position: absolute;
+    top: 12%;
+    left:3%;
+    font-size: 3em;
+    color: #000;
+}
+.secotext{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    top: 25%;
+    left: 5%;
+}
+.secotext p{
+    font-size: 21px;
+    text-align: center;
+    line-height: 145%;
+    cursor: default;
+}
+.imgboxo{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    bottom: 7%;
+    right: 5%;
+    background-image: url("Assests/ezgif-1-a9767d21aa.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.imgboxo:hover{
+    border-radius: 0%;
+    transform: scale(1.2);
+}
+.sectiont{
+    background-color: #ffff;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 200%;
+    z-index: 100;
+}
+.sectiont h1{
+    
+    position: absolute;
+    bottom: 43%;
+    right: 5%;
+    font-size: 2.5em;
+    color: #000;
+}
+.secttext{
+    width: 40%;
+    height: 30%;
+    font-size: 21px;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    right: 7%;
+}
+.secttext p{
+    font-size: 20px;
+    line-height: 145%;
+    cursor: default;
+}
+.imgboxt{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 7%;
+    left: 5%;
+    background-image: url("Assests/tnc_59901509.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.imgboxt:hover{
+    border-radius: 0%;
+    transform: scale(1.2);
+}
+.third{
+    width: 100%;
+    height: 100vh;
+    background-color: #ffff;
+    position: absolute;
+    top: 300%;
+    z-index: 100;
+
+}
+.third h1{
+    position: absolute;
+    top: 7%;
+    left: 35%;
+    font-size: 2em;
+    color: #000;
+}
+.thirdtext{
+    width: 40%;
+    height: 40%;
+    font-size: 21px;
+    text-align: center;
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+.thirdtext p{
+    font-size: 21px;
+    line-height: 145%;
+    cursor: default;
+}
+.imgboxthird{
+    width: 40%;
+    height: 50%;
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    background-image: url("Assests/email_images-e1_sea_turtle_600_q85.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 30px;
+    transition: 0.3s;
+}
+.imgboxthird:hover{
+    border-radius: 0%;
+    transform: scale(1.2);
+}
+.tablesec{
+    width: 100%;
+    height: 70vh;
+    background-image: url("Assests/pexels-blaque-x-932638.jpg");
+}
+.summeryTable {
+    position: relative;
+    width: 90%;
+    left: 5%;
+    top: 10%;
+    border-collapse: collapse;
+    border-width: 2px;
+    border-color: #000000;
+    border-style: solid;
+    color: #000000;
+}
+.table .summeryTable tr th{
+    font-size: 20px;
+}
+table.summeryTable td{
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 3px;
+  text-align: center;
+  text-transform: uppercase;  
+}
+
+table.summeryTable thead {
+  background-color: #00ebb0;
+  font-size: 1.2em;
+}
+table.summeryTable td img{
+    width: 100px;
+    height: auto;
+    border-radius: 30px;
+    transition: 0.5s;
+}
+@media only screen and (max-width: 425px){
+    body{
+        height: 300vh;
+    }
+    .navmain ul{
+        position: absolute;
+        top: 15%;
+        left: 15%;
+        text-align: center;
+        line-height: 25px;
+    }
+    ul li {
+        padding: 0%;
+        font-size: 7px;
+    }
+    .vidseccat{
+        width: 100%;
+        background-attachment: fixed;
+    }
+    .vidcat{
+        width: 70%;
+        position: absolute;
+        top: 30%;
+        left: 20%;
+    }
+    .sticking{
+        display: none;
+    }
+    #sectiono{
+        width: 100%;
+    }
+    #sectiono h1{
+        position: absolute;
+        top: 3%;
+    }
+    .secotext p{
+        position: absolute;
+        top: -15%;
+        width: 210%;
+        font-size: 13px;
+    }
+    .imgboxo{
+        width: 110%;
+        transform: scale(0.6);
+        position: absolute;
+        top: 55%;
+        left: -4%;
+    }
+    .imgboxo:hover{
+        transform: scale(0.6);
+    }
+    .sectiont{
+        width: 100%;
+    }
+    .sectiont h1{
+        position: absolute;
+        top: 10%;
+        left: 4%;
+    }
+    .secttext{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+    .secttext p{
+        width: 210%;
+        font-size: 15px
+    }
+    .imgboxt{
+        width: 100%;
+        height: 40%;
+        transform: scale(0.6);
+        position: absolute;
+        top: 65%;
+        left: -5%;
+    }
+    .imgboxt:hover{
+        transform: scale(0.6);
+    }
+    .third h1{
+        position: absolute;
+        top: 10%;
+        left: 5%;
+        font-size: 25px;
+    }
+    .thirdtext{
+        position: absolute;
+        top: 30%;
+        left: 10%;
+    }
+    .thirdtext p{
+        position: absolute;
+        top: -15%;
+        width: 200%;
+        font-size: 15px
+    }
+    .imgboxthird{
+        width: 110%;
+        transform: scale(0.6);
+        position: absolute;
+        top: 60%;
+        left: -5%;
+    }
+    .imgboxthird:hover{
+        transform: scale(0.6);
+    }
+    .tablesec{
+        position: absolute;
+        top: 410%;
+        width: 100%;
+        height: 100%;
+    }
+}
+.best{
+    position: absolute;
+    top: 190%;
+    left: 45%;
+    border: 1px solid #000;
+   align-content: center;
+   padding: 10px;
+   border-radius: 20px;
+   transition: 0.5s;
+}
+.best a{
+    color: #fff;
+    text-decoration: none;
+}
+.best:hover{
+    background-color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* -----------------------------KEYFRAMING--------------------------- */
+@keyframes rote
+ {
+    from{
+       rotate: 0;
+       opacity: 1;
+    }
+    40%{
+        opacity: 1;
+        rotate: 45deg;
+    }
+    70%{
+        transform: scale(25);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(0);
+        rotate: 45deg;
+        opacity: 0;
+    }
+}
+@keyframes left {
+    from{
+        position: absolute;
+        left: 0;
+    }
+    to{
+        position: absolute;
+        left: -100%;
+        visibility: hidden;
+    }
+}
+@keyframes right {
+    0%{
+        position: absolute;
+        right: 0;
+    }
+    50%{
+        width: 0;
+    }
+    100%{
+        position: absolute;
+        right: -100%;
+        visibility: hidden;
+        width: 0;
+    }
+}
+@keyframes NAV {
+    0%{
+        position: absolute;
+        top: -20%;
+        opacity: 0%;
+    }
+    100%{
+        position: absolute;
+        top: 0;
+        opacity: 100%;
+    }
+}
+@keyframes smokeeff{
+    0%{
+        opacity: 0;
+        transform: rotateY(90deg);
+        filter: blur(10px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotateY(0deg);
+        filter: blur(0);
+    }
+}

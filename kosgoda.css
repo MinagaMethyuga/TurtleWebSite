@@ -1,0 +1,297 @@
+*{
+    padding: 0%;
+    margin: 0%;
+}
+.navmain{
+    width: 100%;
+    height: 8%;
+    background-color: transparent;
+    position: fixed;
+    top: 0%;
+    z-index: 1001;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 14px;
+    animation: NAV 3s ease-in-out 2s 1 normal forwards;
+    opacity: 1;
+}
+.navmain ul{
+    position: absolute;
+    top: 15%;
+    left: 25%;
+}
+ul li{
+    display: inline-block;
+    padding: 7px;
+    background-color: transparent;
+    margin: 0px 10px;
+    border-radius: 20px;
+    transition: 0.3s;
+    transition-timing-function: ease-in-out;
+}
+
+ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+}
+ul li:hover{
+    background-color: rgb(4, 0, 27);
+    transform: scale(1.2)
+}
+/* ------------------------------------------------------------- */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  section {
+    width: 100%;
+    height: 100vh;
+    background-color: #f2f2f2;
+    overflow: hidden;
+  }
+
+  h1 {
+    color: #333;
+  }
+
+  p {
+    color: #666;
+    font-family: 'Montserrat', sans-serif;
+  }
+/* ------------------------------------------------------------------ */
+.textbox{
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    cursor: default;
+}
+.textbox p{
+    font-size: 50px;
+    font-weight: 600;
+    color: black;
+}
+.textbox h1{
+    font-size: 100px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    background: url("Assests/back.png");
+    -webkit-background-clip: text;
+    background-position: 0 0;
+    animation: back 20s linear infinite;
+}
+@keyframes back{
+    100%{
+        background-position: 500px 0;
+    }
+}
+.bgimg{
+    width: 100%;
+    height: 100%;
+    background-image: url("Assests/0102k120009il7fzy7736_D_1180_558.jpg");
+    background-position: center;
+    background-size: cover;
+}
+.SECTION2{
+    background-image: url("Assests/pexels-pok-rie-130879.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.SECTION2 h1{
+    position: absolute;
+    color: black;
+    font-size: 3em;
+    left: 5%;
+    top: 120%;
+    text-transform: uppercase;
+    -webkit-text-stroke: 1px white;
+}
+.SECTION2 p{
+    width: 60%;
+    font-size: 20px;
+    position: absolute;
+    top: 130%;
+    left: 2%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 160%;
+}
+iframe{
+    position: relative;
+    top: 10%;
+    left: 65%;
+
+}
+.SECTION3{
+    background-image: url("Assests/pexels-los-muertos-crew-10041666.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.SECTION3 h1{
+    position: absolute;
+    color: black;
+    font-size: 3em;
+    left: 25%;
+    top: 240%;
+    text-transform: uppercase;
+    cursor: default;
+    transition: 0.5s ease-in-out;
+}
+.SECTION3 h1:hover{
+    transform: scale(1.2);
+}
+.SECTION3 h1:hover ~ p{
+    opacity: 1;
+}
+.SECTION3 p{
+    font-size: 20px;
+    width: 80%;
+    position: absolute;
+    top: 250%;
+    left: 10%;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-align: center;
+    line-height: 160%;
+    opacity: 0;
+    transition: 0.6s ease-in-out;
+}
+.SECTION4{
+    background-image: url("Assests/pexels-darwis-alwan-1817048.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.SECTION4 h1{
+    position: absolute;
+    color: black;
+    font-size: 4em;
+    left: 27%;
+    top: 310%;
+    text-transform: uppercase;
+}
+.SECTION4 .p1{
+    font-size: 16px;
+    width: 40%;
+    position: absolute;
+    top: 330%;
+    left: 5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 160%;
+    font-weight: bold;
+}
+.SECTION4 .p2{
+    font-size: 16px;
+    width: 40%;
+    position: absolute;
+    top: 330%;
+    right: 5%;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 160%;
+    font-weight: bold;
+}
+.moreinfo{
+    position: relative;
+    top: 90%;
+    left: 45%;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+}
+.moreinfo a{
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 25px;
+    padding: 5px;
+    transition: 0.5s ease-in-out;
+}
+.moreinfo a:hover{
+    background-color: white;
+    color: black;
+}
+
+@media only screen and (max-width:450px){
+    .navmain ul{
+        position: absolute;
+        top: 15%;
+        left: 2%;
+        text-align: center;
+        line-height: 25px;
+    }
+    ul li {
+        padding: 0%;
+        font-size: 10px;
+    }
+    .textbox p{
+        font-size: 2em;
+    }
+    .textbox h1{
+        font-size: 4em;
+    }
+    .SECTION2 h1{
+        font-size: 2em;
+        position: absolute;
+        top: 105%;
+    }
+    .SECTION2 p{
+        position: absolute;
+        top: 115%;
+        left: 3%;
+        width: 90%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    iframe{
+        position: absolute;
+        top: 130%;
+        left: 5%;
+        transform: scale(0.5);
+    }
+    .SECTION3 h1{
+        font-size: 2em;
+        position: absolute;
+        left: 2%;
+    }
+    .SECTION3 h1:hover{
+        transform: scale(1);
+    }
+    .SECTION3 p{
+        position: absolute;
+        top: 250%;
+        left: 3%;
+        width: 90%;
+        font-size: 12px;
+        line-height: 18px;
+    }
+    .SECTION4 h1{
+        font-size: 2em;
+        position: absolute;
+        left: 2%;
+    }
+    .SECTION4 .p2{
+        position: absolute;
+        top: 320%;
+        left: 4%;
+        width: 90%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .SECTION4 .p1{
+        position: absolute;
+        top: 350%;
+        left: 4%;
+        width: 90%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .SECTION4 p{
+       background-color: #333;
+       opacity: 70%;
+    }
+}

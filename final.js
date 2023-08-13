@@ -1,0 +1,10 @@
+document.getElementById("finalsets").innerHTML=localStorage.getItem("Date");
+document.getElementById("finaltimeset").innerHTML = localStorage.getItem("Time");
+document.getElementById("Finname").innerHTML=localStorage.getItem("Name");
+document.getElementById("Email").innerHTML=localStorage.getItem("email");
+document.getElementById("Number").innerHTML=localStorage.getItem("mobileNumber");
+document.getElementById("slatd").innerHTML = localStorage.getItem("slaTotal")+"USD";
+document.getElementById("slktd").innerHTML = localStorage.getItem("slkTotal")+"USD";
+document.getElementById("fatd").innerHTML = localStorage.getItem("faTotal")+"USD";
+document.getElementById("fctd").innerHTML = localStorage.getItem("fcTotal")+"USD";
+document.getElementById("total").innerHTML = localStorage.getItem("Totalprice")+"USD";
